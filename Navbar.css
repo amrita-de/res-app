@@ -1,0 +1,98 @@
+/* Navbar.css */
+
+/* Styles for desktop view */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    color: #800080; /* Purple color */
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid #800080; /* Purple border */
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items a {
+    color: #800080; /* Purple color */
+    text-decoration: none;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: white;
+    color: #800080; /* Purple color */
+    border: 2px solid #800080; /* Purple border */
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 2px solid #800080; /* Purple border */
+}
+
+.dropdown-content a {
+    color: #800080; /* Purple color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e6e6fa; /* Light purple on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #e6e6fa; /* Light purple on hover */
+}
+
+.signin {
+    
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.signin:hover {
+    background-color: #4b0082; /* Darker purple on hover */
+}
+
+/* Styles for mobile view */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .nav-items {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items horizontally */
+    }
+
+    .nav-items > *:not(.logo) {
+        display: none; /* Hide all items except logo */
+    }
+}

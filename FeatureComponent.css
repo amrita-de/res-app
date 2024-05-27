@@ -1,0 +1,34 @@
+/* FeatureComponent.css */
+
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.auth-btn{
+    width: 120px;
+
+}
+.feature-section {
+    display: flex;
+    align-items: center; /* Align items horizontally */
+    width: calc(50% - 20px); /* 50% width with 20px spacing */
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 30px; /* Reduced icon size */
+    margin-right: 10px; /* Add some spacing between icon and text */
+}
+
+.description {
+    text-align: center;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .feature-section {
+        width: 100%;
+    }
+}
